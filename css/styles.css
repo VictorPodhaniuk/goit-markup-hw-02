@@ -1,3 +1,4 @@
+/*------------BODY------------*/
 body {
     font-family: "Raleway", sans-serif;
     font-family: "Roboto", sans-serif;
@@ -5,6 +6,9 @@ body {
     color: #212121;
 }
 
+/*---------------------СТУДІЯ-------------------*/
+
+/*------------HEADER------------*/
 .header-logo {
     font-family: "Raleway";
     font-style: normal;
@@ -27,14 +31,12 @@ body {
 
 .header-list {
     list-style-type: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
 }
 
 .header-link {
     text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -48,6 +50,8 @@ body {
 
 .header-contacts-link {
     text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -60,6 +64,7 @@ body {
     color: #2196F3;
 }
 
+/*------------HERO------------*/
 .hero {
     width: 1600px;
     height: 600px;
@@ -69,7 +74,6 @@ body {
 }
 
 .hero-title {
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
@@ -79,7 +83,7 @@ body {
 }
 
 .hero-btn {
-    font-weight: 700;
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.87;
     display: flex;
@@ -87,9 +91,16 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
     background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
+/*------------OUR FEATURES------------*/
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -104,13 +115,163 @@ body {
 }
 
 .features-item {
-    list-style-type: none;}
+    list-style-type: none;
+}
 
 .features-subtitle {
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
+.features-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/*------------OUR ACTIVITIES-----------*/
+.activities-title {   
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.activities-item {
+    list-style-type: none; 
+}
+
+/*------------OUR TEAM-----------*/
+.team {
+    background: #F5F4FA;;
+}
+
+.team-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-item {
+    list-style-type: none;
+    background: #FFFFFF;
+}
+
+.team-name {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-position {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/*------------FOOTER-----------*/
+.footer {
+    background: #2F303A;
+}
+
+.footer-logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;  
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-part-logo {
+    color: #2196F3;
+}
+
+.address-name:hover,                                         
+.address-name:focus {
+    color: #2196F3;
+}
+
+.address-name {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer-contacts-list {
+    list-style-type: none;
+    
+}
+
+.footer-contacts-link {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color: #2196F3;
+}
+
+/*---------------------ПОРТФОЛІО-------------------*/
+
+/*----------main-------------*/
+.list-btn {
+    list-style-type: none;
+}
+
+.btn-filter {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    width: 130px;
+    height: 38px;
+    left: 957px;
+    top: 174px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.list-projects {
+    list-style-type: none;
+}
+
+.link-projects {
+    text-decoration: none;
+}
+
+.subtitle-projects {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.text-projects {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
