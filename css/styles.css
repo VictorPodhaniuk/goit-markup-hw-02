@@ -1,38 +1,53 @@
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --transparent-text-color: rgba(255, 255, 255, 0.6);
+
+    --secondary-background-color:  #2F303A;
+    --section-background-color: #F5F4FA;
+    --accent-btn-background-color: #188CE8;
+
+    --white-color: #FFFFFF;
+    --blue-color: #2196F3;
+}
 /*------------BODY------------*/
 body {
-    background-color: #ffffff;
-    color: #212121;
     font-family: "Roboto", sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+
+
 }
 
 /*---------------------СТУДІЯ-------------------*/
 
 /*------------HEADER------------*/
 .header {
-    background-color: #ffffff;
+    background-color: var(--white-color);
 }
 
 .nav-list .nav-link.current {
-    color: #2196F3;
+    color:var(--blue-color);
     }
 
 .header-logo {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19; 
     text-decoration: none;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .part-logo {
-    color: #2196F3;   
+    color: var(--accent-text-color);   
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #2196F3;
+    color: var(--blue-color);
 }
 
 .nav-list {
@@ -41,11 +56,10 @@ body {
 
 .nav-link {
     text-decoration: none;
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: #212121;
+    color:    var(--primary-text-color);
 }
 
 .header-item {
@@ -58,17 +72,17 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 .header-link:hover,
 .header-link:focus {
-    color: #2196F3;
+    color: var(--blue-color);
 }
 
 /*------------HERO------------*/
 .hero {
-    background-color: #2F303A;
+    background-color: var(--secondary-background-color);
 }
 
 .hero-title {
@@ -78,7 +92,13 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--accent-btn-background-color);
+    cursor: pointer;
 }
 
 .hero-btn {
@@ -86,9 +106,9 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    color: #FFFFFF;
-    background: #2196F3;
-
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background-color: var(--blue-color);
 }
 
 /*------------------ПРИХОВАНИЙ ЗАГОЛОВОК------------*/
@@ -118,11 +138,10 @@ body {
 }
 
 .features-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 /*------------OUR ACTIVITIES-----------*/
@@ -139,7 +158,7 @@ body {
 
 /*------------OUR TEAM-----------*/
 .team {
-    background: #F5F4FA;;
+    background-color: var(--section-background-color);;
 }
 
 .team-title {
@@ -151,10 +170,11 @@ body {
 
 .team-item {
     list-style-type: none;
-    background: #FFFFFF;
+    background-color: var(--white-color);
 }
 
 .team-name {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -164,44 +184,42 @@ body {
 .team-position {
     font-size: 16px;
     line-height: 1.18;
-    color: #757575;
+    color:var(--secondary-text-color);
     text-align: center;
     letter-spacing: 0.03em;
 }
 
 /*------------FOOTER-----------*/
 .footer {
-    background: #2F303A;
+    background-color: var(--secondary-background-color);
 }
 
 .footer-logo {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19; 
     text-decoration: none;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .footer-part-logo {
-    color: #2196F3;
+    color: var(--blue-color);
 }
 
 .address-name:hover,                                         
 .address-name:focus {
-    color: #2196F3;
+    color:var(--blue-color);
 }
 
 .address-name {
     text-decoration: none;
-    font-family: 'Roboto';
-    font-weight: 400;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color:var(--white-color);
 }
 
 .footer-list {
@@ -217,12 +235,12 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--transparent-text-color);
 }
 
 .footer-link:hover,
 .footer-link:focus {
-    color: #2196F3;
+    color: var(--blue-color);
 }
 
 /*---------------------ПОРТФОЛІО-------------------*/
@@ -233,12 +251,14 @@ body {
 }
 
 .btn-filter:hover,
-.btn-filter :focus {
-    background-color: #2196F3;
+.btn-filter:focus {
+    background-color: var(--blue-color);
+    color:var(--white-color);
+    cursor: pointer;
 }
 
 .list-btn .btn-filter.current {
-    background-color: #2196F3;
+    background-color: var(--blue-color);
 }
 
 .btn-filter {
@@ -248,7 +268,7 @@ body {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    background: #F5F4FA;
+    background-color: var(--section-background-color);
 }
 
 .list-projects {
@@ -263,12 +283,12 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .text-projects {
     font-size: 18px;
-    line-height: 2;
+    line-height: 1.88;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
