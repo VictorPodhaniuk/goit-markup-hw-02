@@ -4,12 +4,12 @@
     --secondary-text-color: #757575;
     --transparent-text-color: rgba(255, 255, 255, 0.6);
 
+    --white-color: #FFFFFF;
+    --blue-color: #2196F3;
+
     --secondary-background-color:  #2F303A;
     --section-background-color: #F5F4FA;
     --accent-btn-background-color: #188CE8;
-
-    --white-color: #FFFFFF;
-    --blue-color: #2196F3;
 }
 /*------------BODY------------*/
 body {
@@ -23,10 +23,6 @@ body {
 /*---------------------СТУДІЯ-------------------*/
 
 /*------------HEADER------------*/
-.header {
-    background-color: var(--white-color);
-}
-
 .nav-list .nav-link.current {
     color:var(--blue-color);
     }
@@ -68,10 +64,9 @@ body {
 
 .header-link {
     text-decoration: none;
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.14;   
     color: var(--secondary-text-color);
 }
 
@@ -229,9 +224,7 @@ body {
 
 .footer-link {
     text-decoration: none;
-    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
