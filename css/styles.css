@@ -38,7 +38,7 @@ body {
 }
 
 .part-logo {
-    color: var(--accent-text-color);   
+    color: var(--blue-color);
 }
 
 .nav-link:hover,
